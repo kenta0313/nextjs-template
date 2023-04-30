@@ -25,11 +25,13 @@ module.exports = {
     },
   },
   extends: [
+    'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'plugin:prettier/recommended',
     'plugin:tailwindcss/recommended',
+    'prettier',
   ],
   rules: {
     semi: ['error', 'always'],
@@ -38,7 +40,7 @@ module.exports = {
     'no-extra-semi': 'error',
     'no-unexpected-multiline': 'error',
     'no-unreachable': 'error',
-    'prettier/prettier': ERROR, // prettier拡張
+    'prettier/prettier': ['error', { singleQuote: true }], // prettier拡張
     'no-var': ERROR, // var禁止
     'object-shorthand': [ERROR, 'always'], // オブジェクト定義時にショートハンド利用
     'prefer-arrow-callback': ERROR, // コールバックにはアロー関数を利用

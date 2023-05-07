@@ -35,6 +35,8 @@ module.exports = {
     "semi-spacing": ["error", { after: true, before: false }],
     "semi-style": ["error", "last"],
     "no-extra-semi": "error",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
   },
   settings: {
     react: { version: "16.8.6" },
